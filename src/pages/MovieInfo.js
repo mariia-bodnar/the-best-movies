@@ -39,13 +39,7 @@ const MovieInfo = () => {
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           alt="poster"
         />
-        <Box
-          sx={{
-            width: 200,
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
+        <div style={{ display: "flex" }}>
           <Rating
             name="text-feedback"
             value={movie.vote_average}
@@ -57,7 +51,7 @@ const MovieInfo = () => {
             max={10}
           />
           <Box sx={{ ml: 2 }}>Imdb{movie.vote_average}</Box>
-        </Box>
+        </div>
         {countries && <p>Countries: {countries}</p>}
         {genres && <p>Genres: {genres}</p>}
         {tagline && <p style={{ fontWeight: "bold" }}>Tagline: {tagline}</p>}
