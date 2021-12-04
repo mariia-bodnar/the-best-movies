@@ -21,7 +21,7 @@ const Container = styled.div`
   align-items: center;
   height: 100px;
   background-color: #043959;
-  width: 100%;
+  width: 100vw;
 `;
 
 export default Header;
