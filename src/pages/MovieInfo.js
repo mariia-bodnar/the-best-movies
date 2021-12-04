@@ -35,6 +35,7 @@ const MovieInfo = () => {
           {movie.original_title}
         </h1>
         <img
+          style={{ maxWidth: "100vw" }}
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           alt="poster"
         />
